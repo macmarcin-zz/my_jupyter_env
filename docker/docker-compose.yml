@@ -1,0 +1,10 @@
+version: '3'
+services: 
+  jupyter:
+    ports:
+    - "8888:8888"
+    volumes:
+    - /Users/mmichalski/dev/ml/domino/jupyter_notebook_config.py
+    - /Users/mmichalski/dev/ml/domino/notebooks
+    build: .
+
