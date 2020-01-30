@@ -4,7 +4,8 @@ services:
     ports:
     - "8888:8888"
     volumes:
-    - /Users/mmichalski/dev/ml/domino/jupyter_notebook_config.py
-    - /Users/mmichalski/dev/ml/domino/notebooks
+    - ~/dev/ml/domino/notebooks:/notebooks:rw
+    - ~/dev/ml/domino/data:/data:rw
+    container_name:   jupyter_notebook
     build: .
 

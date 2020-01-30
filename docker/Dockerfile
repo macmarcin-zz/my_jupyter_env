@@ -38,7 +38,7 @@ RUN pip install pandas
 RUN pip install numpy
 RUN pip install --upgrade xgboost
 
-WORKDIR /notebooks
-
 # Switch back to jovyan to avoid accidental container runs as root
 USER $NB_UID
+
+WORKDIR /notebooks
